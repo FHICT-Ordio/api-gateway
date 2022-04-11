@@ -52,8 +52,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd Software_S3\Docker
-            docker-compose stop api-gateway
-            docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/api-gateway:latest
-            docker-compose up -d --build api-gateway
+            docker compose down
+            docker compose pull
+            docker compose up -d --build
 
 

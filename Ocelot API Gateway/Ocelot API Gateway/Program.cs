@@ -30,7 +30,6 @@ namespace Ocelot_API_Gateway
                 })
                 .Configure(app =>
                 {
-                    Console.WriteLine("Test");
                     app.UseRouting();
                     app.UseOcelot().Wait();                    
                 })
