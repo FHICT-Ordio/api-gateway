@@ -53,6 +53,7 @@ jobs:
           script: |
             dir
             cd Software_S3\Docker
+            dir
             start cmd /k call Update.bat
 
 
