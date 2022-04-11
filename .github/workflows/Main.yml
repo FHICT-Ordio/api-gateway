@@ -52,8 +52,6 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd Software_S3\Docker
-            docker compose down
-            docker compose pull
-            docker compose up -d --build
+            start cmd /k call Update.bat
 
 
