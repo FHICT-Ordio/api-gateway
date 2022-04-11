@@ -23,6 +23,18 @@
       ],
       "UpstreamPathTemplate": "/Menu",
       "UpstreamHttpMethod": []
+    },
+    {
+      "DownstreamPathTemplate": "/Item/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "menu-service",
+          "Port": 1001
+        }
+      ],
+      "UpstreamPathTemplate": "/Item/{everything}",
+      "UpstreamHttpMethod": []
     }
   ],
   "GlobalConfiguration": {
