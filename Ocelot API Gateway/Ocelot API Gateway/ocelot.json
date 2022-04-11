@@ -1,0 +1,31 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Menu/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "menu-service",
+          "Port": 1001
+        }
+      ],
+      "UpstreamPathTemplate": "/Menu/{everything}",
+      "UpstreamHttpMethod": []
+    },
+    {
+      "DownstreamPathTemplate": "/Menu",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "menu-service",
+          "Port": 1001
+        }
+      ],
+      "UpstreamPathTemplate": "/Menu",
+      "UpstreamHttpMethod": []
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:1000"
+  }
+}
