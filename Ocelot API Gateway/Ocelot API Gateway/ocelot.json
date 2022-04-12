@@ -38,6 +38,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:1000"
+    "BaseUrl": "http://86.92.40.132:1000"
   }
 }
