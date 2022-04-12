@@ -31,6 +31,13 @@ namespace Ocelot_API_Gateway
                 .Configure(app =>
                 {
                     app.UseRouting();
+                    app.UseEndpoints(endpoints =>
+                    {
+                        endpoints.MapGet("/", async context =>
+                        {
+                            await context.Response.WriteAsync("Hello world!");
+                        });
+                    });
                     app.UseOcelot().Wait();                    
                 })
                 .Build()
