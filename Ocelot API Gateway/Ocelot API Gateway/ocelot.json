@@ -2,7 +2,7 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/Menu/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "menu-service",
@@ -14,7 +14,7 @@
     },
     {
       "DownstreamPathTemplate": "/Menu",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "menu-service",
@@ -26,7 +26,7 @@
     },
     {
       "DownstreamPathTemplate": "/Item/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "menu-service",
