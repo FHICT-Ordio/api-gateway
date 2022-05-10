@@ -14,4 +14,8 @@
     <PackageReference Include="Ocelot" Version="18.0.0" />
   </ItemGroup>
 
+	<ItemGroup>
+		<None Include="appsettings.json" CopyToPublishDirectory="Always" />
+	</ItemGroup>
+
 </Project>
