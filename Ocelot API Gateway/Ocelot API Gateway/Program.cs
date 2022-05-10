@@ -8,7 +8,6 @@ namespace Ocelot_API_Gateway
         public static void Main(string[] args)
         {
             new WebHostBuilder()
-                .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .ConfigureAppConfiguration((hostingContext, config) =>
                 {
@@ -40,6 +39,7 @@ namespace Ocelot_API_Gateway
                     });
                     app.UseOcelot().Wait();                    
                 })
+                .UseKestrel()
                 .Build()
                 .Run();
         }
