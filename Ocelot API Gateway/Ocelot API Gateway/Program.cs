@@ -33,14 +33,12 @@ builder.Services.AddRouting();
 var app = builder.Build();
 
 app.UseRouting();
-app.UseEndpoints(endpoints =>
+app.MapGet("/", async context =>
 {
-    endpoints.MapGet("/", async context =>
-    {
-        await context.Response.WriteAsync("Hello world!");
-    });
-    app.UseOcelot().Wait();
+    await context.Response.WriteAsync("Hello world!");
 });
+
+
 
 app.Run();
 
