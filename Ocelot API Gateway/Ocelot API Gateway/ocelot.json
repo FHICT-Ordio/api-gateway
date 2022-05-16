@@ -10,7 +10,8 @@
         }
       ],
       "UpstreamPathTemplate": "/Menu/{everything}",
-      "UpstreamHttpMethod": []
+      "UpstreamHttpMethod": [],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/Menu",
@@ -22,7 +23,8 @@
         }
       ],
       "UpstreamPathTemplate": "/Menu",
-      "UpstreamHttpMethod": []
+      "UpstreamHttpMethod": [],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
       "DownstreamPathTemplate": "/Item/{everything}",
@@ -34,11 +36,11 @@
         }
       ],
       "UpstreamPathTemplate": "/Item/{everything}",
-      "UpstreamHttpMethod": []
+      "UpstreamHttpMethod": [],
+      "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost",
-    "DangerousAcceptAnyServerCertificateValidator": true
+    "BaseUrl": "http://localhost"
   }
 }
