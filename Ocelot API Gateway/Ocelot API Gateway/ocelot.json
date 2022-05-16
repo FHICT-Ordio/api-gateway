@@ -38,6 +38,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost"
+    "BaseUrl": "http://localhost"
   }
 }
