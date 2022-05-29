@@ -38,6 +38,19 @@
       "UpstreamPathTemplate": "/Item/{everything}",
       "UpstreamHttpMethod": [],
       "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/Public/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "menu-service",
+          "Port": 1001
+        }
+      ],
+      "UpstreamPathTemplate": "/Public/",
+      "UpstreamHttpMethod": [],
+      "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],
   "GlobalConfiguration": {
