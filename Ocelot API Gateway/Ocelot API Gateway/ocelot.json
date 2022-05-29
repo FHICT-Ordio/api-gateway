@@ -40,7 +40,7 @@
       "DangerousAcceptAnyServerCertificateValidator": true
     },
     {
-      "DownstreamPathTemplate": "/Public/",
+      "DownstreamPathTemplate": "/Public/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -48,7 +48,7 @@
           "Port": 1001
         }
       ],
-      "UpstreamPathTemplate": "/Public/",
+      "UpstreamPathTemplate": "/Public/{everything}",
       "UpstreamHttpMethod": [],
       "DangerousAcceptAnyServerCertificateValidator": true
     }
